@@ -11,7 +11,7 @@ waifuneverdie/waifuneverdie is a ✨ special ✨ repository because its `README.
 You can click the Preview link to take a look at your changes.
 --->
 # …or create a new repository on the command line
-echo "# TopOpt-Matlab" >> README.md
+echo "# waifuneverdie" >> README.md
 git init
 git add README.md
 git commit -m "first commit"
