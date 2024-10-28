@@ -10,7 +10,8 @@
 waifuneverdie/waifuneverdie is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 You can click the Preview link to take a look at your changes.
 --->
-# …or create a new repository on the command line
+## …or create a new repository on the command line
+```bash
 echo "# waifuneverdie" >> README.md
 git init
 git add README.md
@@ -19,7 +20,8 @@ git branch -M main
 git remote add origin https://github.com/waifuneverdie/waifuneverdie.git
 git push -u origin main
 
-# …or push an existing repository from the command line
+## …or push an existing repository from the command line
+```bash
 git remote add origin https://github.com/waifuneverdie/waifuneverdie.git
 git branch -M main
 git push -u origin main
@@ -58,10 +60,11 @@ This is a list of commonly used Git commands, along with a brief description of 
 ## Remote Repositories
 1. **`git remote add <name> <url>`**: Adds a new remote repository.
 2. **`git remote -v`**: Shows the URLs of the remote repositories.
-3. **`git push`**: Pushes changes to a remote repository.
-4. **`git push origin <branch-name>`**: Pushes a specific branch to the remote repository.
-5. **`git pull`**: Fetches and merges changes from the remote repository into the current branch.
-6. **`git fetch`**: Fetches changes from the remote but does not merge them.
+3. **`git remote set-url origin <new-url>`**: Change remote URL
+4. **`git push`**: Pushes changes to a remote repository.
+5. **`git push origin <branch-name>`**: Pushes a specific branch to the remote repository.
+6. **`git pull`**: Fetches and merges changes from the remote repository into the current branch.
+7. **`git fetch`**: Fetches changes from the remote but does not merge them.
 
 ## Undoing Changes
 1. **`git reset <file>`**: Unstages a file that has been added to the staging area.
