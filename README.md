@@ -11,17 +11,7 @@ waifuneverdie/waifuneverdie is a ✨ special ✨ repository because its `README.
 You can click the Preview link to take a look at your changes.
 --->
 # WaifuNeverDie
-This will create a properly formatted README file on GitHub, where the code snippets are clearly separated in code blocks and the repository instructions are easy to follow.
 
-### Instructions to Create:
-1. Create a `README.md` file in the root of your Git repository.
-2. Copy the markdown above into the `README.md` file.
-3. Add, commit, and push the changes to GitHub:
-```bash
-git add README.md
-git commit -m "Add instructions to README"
-git push origin main
-```
 ## …or create a new repository on the command line
 ```bash
 echo "# waifuneverdie" >> README.md
