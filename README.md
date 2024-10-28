@@ -17,11 +17,11 @@ This will create a properly formatted README file on GitHub, where the code snip
 1. Create a `README.md` file in the root of your Git repository.
 2. Copy the markdown above into the `README.md` file.
 3. Add, commit, and push the changes to GitHub:
-
 ```bash
 git add README.md
 git commit -m "Add instructions to README"
 git push origin main
+```
 ## …or create a new repository on the command line
 ```bash
 echo "# waifuneverdie" >> README.md
