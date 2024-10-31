@@ -39,6 +39,11 @@ This is a list of commonly used Git commands, along with a brief description of 
 1. **`git config --global user.name "Your Name"`**: Sets your Git username.
 2. **`git config --global user.email "you@example.com"`**: Sets your Git email address.
 3. **`git config --list`**: Lists all current configurations.
+4. **`git config --global alias.pr '!gh pr create'`**: Creating a new pull request.
+5. **`git config --get-regexp alias`**: Listing all aliases.
+6. **`git st`**: Set up aliases.
+7. **`git config --global alias.<alias-name> '<command>'`**: Create a git alias.
+
 
 ## Repository Commands
 1. **`git init`**: Initializes a new Git repository in your current directory.
@@ -48,9 +53,10 @@ This is a list of commonly used Git commands, along with a brief description of 
 1. **`git status`**: Shows the status of changes, including tracked, untracked, and staged files.
 2. **`git add <file>`**: Adds a file to the staging area (to be committed).
 3. **`git add .`**: Adds all changes in the current directory to the staging area.
-4. **`git commit -m "Commit message"`**: Commits staged changes with a message.
-5. **`git commit -a`**: Stages all tracked file changes and commits them in one step.
-6. **`git diff`**: Shows the differences between the working directory and the staging area.
+4. **`git add -p filename`**: Add changes to specific parts of a file (interactive mode).
+5. **`git commit -m "Commit message"`**: Commits staged changes with a message.
+6. **`git commit -a`**: Stages all tracked file changes and commits them in one step.
+7. **`git diff`**: Shows the differences between the working directory and the staging area.
 
 ## Branching and Merging
 1. **`git branch`**: Lists all branches in the repository. The current branch is highlighted.
@@ -66,8 +72,10 @@ This is a list of commonly used Git commands, along with a brief description of 
 3. **`git remote set-url origin <new-url>`**: Change remote URL
 4. **`git push`**: Pushes changes to a remote repository.
 5. **`git push origin <branch-name>`**: Pushes a specific branch to the remote repository.
-6. **`git pull`**: Fetches and merges changes from the remote repository into the current branch.
-7. **`git fetch`**: Fetches changes from the remote but does not merge them.
+6. **`git push -u origin <branch-name>`**: Pushes a specific branch to the remote repository and also sets it as the upstream branch.
+7. **`git push -set--upstream <branch-name>`**: Pushes a specific branch to the remote repository and also sets it as the upstream branch.
+8. **`git pull`**: Fetches and merges changes from the remote repository into the current branch.
+9. **`git fetch`**: Fetches changes from the remote but does not merge them.
 
 ## Undoing Changes
 1. **`git reset <file>`**: Unstages a file that has been added to the staging area.
@@ -88,9 +96,12 @@ This is a list of commonly used Git commands, along with a brief description of 
 
 ## Tagging
 1. **`git tag <tag-name>`**: Creates a tag for the current commit.
-2. **`git tag`**: Lists all tags.
-3. **`git push origin <tag-name>`**: Pushes a tag to the remote repository.
-
+2. **`git tag -a <tag-name> -m`**: To create an annotated tag (with metadata, message, etc.)
+3. **`git tag`**: Lists all tags.
+4. **`git push origin <tag-name>`**: Pushes a tag to the remote repository.
+5. **`git push origin --tags`**: Pushes all tags to the remote repository.
+6. **`git tag -d <tag_name>`**: Deletes a tag locally.
+7. **`git push origin --delete <tag_name>`**: Deletes a tag from GitHub.
 ## Collaborating
 1. **`git pull origin <branch-name>`**: Fetches and merges changes from a remote branch into the current branch.
 2. **`git rebase <branch>`**: Re-applies commits on top of another branch, used for cleaning up commit history.
@@ -128,3 +139,28 @@ This is a list of commonly used Git commands, along with a brief description of 
    ```
 
 This summary of Git commands provides an overview of the most commonly used operations. Let me know if you need more detailed information on any particular command or workflow!
+
+
+## Window Powershell
+1. **`New-Item -Path . -Name "filename.txt" -ItemType "File"`**: Create a new file.
+2. **`New-Item -Path . -Name "foldername" -ItemType "Directory"`**: Create new directory.
+3. **`Set-Location -Path "C:\path\to\folder"`**: Move to a specific folder.
+4. **`Get-ChildItem`**: Show all children directory.
+5. **`Remove-Item -Path "filename.txt"`**: Delete a file.
+6. **`Remove-Item -Path "foldername" -Recurse"`**: Delete a folder and all subfoler.
+7. **`Copy-Item -Path "source.txt" -Destination "destination.txt"`**: Copy file to destination folder.
+8. **`Move-Item -Path "source.txt" -Destination "C:\new\location"`**: Move file to destination folder.
+9. **`Get-Content -Path "filename.txt"`**: Check the content of the file.
+10. **`Get-ChildItem -Recurse -Filter "*keyword*"`**: Search for a file or a folder with specific keyword.
+
+## Git Bash
+1. **`ls`**: Show all children items.
+2. **`cd <Directory>`**: Navigate in.
+3. **`cd ..`**: Navigate out.
+4. **`cd ~`**: Go to Home Directory.
+5. **`cd \`**: Go to the Root of the Current Drive.
+6. **`cd %USERPROFILE%\Desktop`**: Go to a Specific Path (e.g., Desktop).
+7. **`D:`**: Change Drive (e.g., from C: to D:).
+8. **`cd $HOME\Desktop`**: Go to a Specific Directory (e.g., Desktop).
+9. **`mkdir <Directory-Name>"`**: Create a new directory.
+10. **`touch <File-Name.extension>"`**: Create a new file.
