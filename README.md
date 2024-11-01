@@ -65,6 +65,8 @@ This is a list of commonly used Git commands, along with a brief description of 
 4. **`git checkout -b <branch-name>`**: Creates and switches to a new branch.
 5. **`git merge <branch-name>`**: Merges changes from the specified branch into the current branch.
 6. **`git branch -d <branch-name>`**: Deletes a branch (after it has been merged).
+7. **`git checkout -m <new-branch-name>`**: Changing the branch name of the current branch.
+8. **`git checkout -m <target-branch-name> <new-branch-name>`**: Changing the branch name of a specific branch.
 
 ## Remote Repositories
 1. **`git remote add <name> <url>`**: Adds a new remote repository.
